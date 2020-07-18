@@ -1,4 +1,4 @@
-#Drawing App
+# Drawing App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -11,9 +11,9 @@ yarn run start
 node server/index.js
 ```
 
-#APPLICATION
+# APPLICATION
 
-#PERSISTENCE LAYER
+# PERSISTENCE LAYER
 
 I chose to use the `data-store` npm module as my nodeJS persistence layer.  Ideally I would like to use a database like `postgres` with `Sequelize` as the ORM that would have a table for `USERS` that will save the username, password hash and other user details, a table for `DRAWINGS`
 that will save the base64 drawing, creation date, time spent drawing, and a `USERS` foreign key.
