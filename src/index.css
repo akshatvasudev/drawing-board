@@ -1,0 +1,129 @@
+/*Generics*/
+ul {
+    padding: 0;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/*Containers/Common components*/
+.App {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+nav {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #3792a7;
+    width: 100%;
+    height: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Auth page: Login/Sign up*/
+.auth_container {
+    width: 50%;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.auth_container h1 {
+    text-align: center;
+}
+
+
+.signup {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+/*Drawing Page*/
+.drawingPage {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.drawingPage h1 {
+    font-size: 2vw;
+}
+
+.drawingList li {
+    list-style: none;
+    border-bottom: 1px solid #e62c2c;
+}
+
+.drawingList li img {
+    width: 60%;
+}
+
+/*Options Pull Down Bar*/
+.options {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: -125px;
+    transition: all 1s linear;
+    background: #947742;
+    padding-bottom: 5px;
+}
+
+.options.open {
+    top: 0px;
+}
+
+.options>section {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pull-bar {
+    width: 4%;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    right: 1%;
+}
+
+.options .pull-bar-down {
+    display: block;
+}
+
+.options.open .pull-bar-down {
+    display: none;
+}
+
+.options .pull-bar-up {
+    display: none;
+}
+
+.options.open .pull-bar-up {
+    display: block;
+}
+
+/*Responsive
+
+This is incomplete.  I only did the homepage & auth page but would've loved to do the drawing page as well
+*/
+@media (max-width: 991px) {
+    .drawingPage {
+        width: 100%;
+    }
+
+    .drawingPage h1 {
+        font-size: 5vw;
+    }
+}
