@@ -48,8 +48,12 @@ const LoginSignup = (props) => {
     }
     return (
         <section className='auth_container'>
-    <h1>{credentialScreenState.showLogin?'Login':'Sign Up'}</h1>
-    {credentialScreenState.errorMessage?<Alert variant='danger'>{credentialScreenState.errorMessage}</Alert>:''}
+    <h1>
+        {credentialScreenState.showLogin?'Login':'Sign Up'}
+    </h1>
+    {
+        credentialScreenState.errorMessage?<Alert variant='danger'>{credentialScreenState.errorMessage}</Alert>:''
+    }
     <Form  onSubmit={onSubmit}>
       <Form.Group>
         <Form.Label>Username</Form.Label>
